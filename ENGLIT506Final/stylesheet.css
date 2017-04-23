@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P); 
+
+body{
+  text-align: center;
+  font-family: 'Press Start 2P';
+  background-color:black;
+ }
+ 
+h1{
+  color:#00e500;
+}
+p{
+  color:#00e500;
+}
+h3{
+color:#00e500;
+margin-left: 250px;
+margin-top: 50px;
+font-size: .75em;
+
+}
+#explaination{
+	margin-top:40px;
+}
+#mainBox{
+  text-align: center;
+  margin-left: 250px;
+  padding-right:15%;
+  padding-left:15%;
+  padding: 30px 15% 0 15%
+}
+
+#sidebar {
+    position:fixed;
+    top:0; bottom:0; left:0;
+    width:250px;
+    background: white;
+    text-align: left;
+    font-size: 1.25em;
+  background-image: url("639f69896637ab7dcae8ba42a947fb5e.jpg");
+    background-size:cover;             
+    background-repeat:no-repeat;
+
+}
+
+#footer{
+	position: fixed;
+	bottom:0;
+	left:250px;
+	right:0;
+	height: 25px;
+	font-size: .5em;
+	background-color: white;
+	text-align: left;
+	padding: 5px;
+	float:left;
+}
+
+#footer p{
+	color: black;
+	font-family: 'Press Start 2P';
+	float:left;
+}
+.twitter-share-button{
+	float:left;
+	margin-left:10px;
+}
+.tumblr-share-button{
+	float:left;
+	margin-left: 10px;
+}
+
+a{
+  color:#e5e500;
+ 
+}
+
+
+ul{
+  margin-top: 100px;
+}
+
+li{
+  margin-bottom: 30px;
+  font-size: .5em;
+}
+
+h4{
+  margin-left: 20%;
+}

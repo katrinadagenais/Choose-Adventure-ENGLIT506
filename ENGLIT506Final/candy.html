@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Adventure Online</title>
+  <link rel="stylesheet" href="stylecandy.css" type="text/css">
+ 
+  </head>
+  
+  <body>
+  
+
+<div id="top"<p><font color="#00e500">This story is incomplete.<br><br/> 2 or more branches are accepting responses.</font></p></div>
+
+ <div id = "footer">
+		  <p id="foot">	Spread the word! </p>
+		
+
+		<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.programmedadventure.com" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a class="tumblr-share-button" data-color="blue" data-notes="none" href="https://embed.tumblr.com/share"></a> <script>!function(d,s,id){var js,ajs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://assets.tumblr.com/share-button.js";ajs.parentNode.insertBefore(js,ajs);}}(document, "script", "tumblr-js");</script>
+</div>	
+	 
+<div id = "sidebar"> 
+  <h4><a href="index.html">Home</a></h4>
+  <ul style="list-style-type:none">
+  <li><a href="knight.html">Knight Life</a></li>
+  <li><a href="candy.html">Candyland Caper</a></li>
+  <li><a href="circus.html">Century Circus</a></li>
+  <li><a href="island.html">Stranded!</a></li>
+  </ul>
+</div>
+
+<div id="all">
+  <h1> Candyland Caper </h1>
+  
+<div id = "mainBox">
+    <img id="mainImage" src = "Candyland-Gumdrops-Scenic-Backdrop.jpg">
+    
+    <p id="story"> You have been selected for a top secret mission. The scientists explain 
+	to you in confidentiality that many widely marketted children's games
+    are based on reality, though they are realities different then our own. 
+    These alternate universes have all been conversing for quite some time, 
+    and our universe is the one assigned as protector to all the others. 
+    That is why they make games based on these worlds, they explained, so 
+    if they need to send someone in to protect one of the universes, they
+    would have an amount of familiarity with the place to which they must 
+    travel. They explain that no matter how much they are based on these
+    real worlds, the games are nothing like the universes that ours is responsible 
+    for. Though our universe is not often called upon to protect, the 
+    scientists are always on the lookout for a distress signal. They were
+     surprised to now have recieved one from the most peaceful of places, 
+    Candyland.<br/><br/>The Candyland signal was weak and unclear, but it did
+    indicate distress. Your job is to travel to Candyland, find out what
+    is amiss there, and report back. <br/><br/>The scientists are very firm that once
+    you know the problem you should take no action and simply report back.
+    They give you a device coverd in many buttons and point to a circular
+    yellow button. "This button will take you back to our universe. Press 
+    it when you have the information or are in too much distress to continue
+     your mission. This is the only button you may press."<br/><br/>With 
+    that, they open the door to the Wormhole Room (another heavily guarded
+    secret) and wish you luck. You close your eyes and walk forward until you 
+    are caught off guard by the smell of sugar.<br/><br/>You open your eyes and 
+    see Candyland. You are surprised by how much it seems like the game. 
+    You see the Lollypop Woods, the Snowflake Lake, the Gumdrop mountains
+     in the distance, and can smell peppermint.
+    You begin to wonder if the scientists could have been wrong, about both
+    Candyland being different from the game and about its being in trouble.</p>
+	
+	</div>
+  <div id = "buttons"> 
+  <button id = "left" onclick = Disguise()><font color="#00e500"> Go undercover </font></button>
+      <button id = "right" onclick = Eat()><font color="#00e500">  Free candy? EAT! </button></font>
+ </div><!---->
+<div id="submit">  
+    <h3>What would you do?</h3>
+
+   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <!-- Style The Contact Form How Ever You Prefer -->
+   <link rel="stylesheet" href="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/style.css">
+
+  <form id="gform" method="POST" class="pure-form pure-form-stacked"
+  action="https://script.google.com/macros/s/AKfycbwu7teQlwAg7usFjNcQsl7KqiAy-z4ZEKHmiexPZQAdONZqVts/exec">
+    <!-- change the form action to your script url -->
+
+   
+
+    <fieldset class="pure-group">
+      <label for="message"></label>
+      <textarea id="message" name="message" rows="6" cols="50"
+      placeholder="Make a suggestion. . ."></textarea>
+    </fieldset>
+
+   <fieldset class="pure-group">
+      <label for="email">email:</label>
+      <input id="email" name="email" type="email" value=""
+      required placeholder="your.name@email.com"/>
+      <span id="email-invalid" style="visibility:hidden">
+        Must be a valid email address</span>
+    </fieldset>
+
+    
+
+    <button class="button-success">
+      Send</button>
+
+  </form>
+
+  <!-- Customise the Thankyou Message People See when they submit the form: -->
+  <div style="display:none;" id="thankyou_message">
+    <h2>Thanks for your suggestion! Check for updates soon!</h2>
+ </div>
+</div></div>
+
+
+  
+
+
+<script type = "text/javascript">
+
+var leftButton = document.getElementById('left');
+
+var rightButton = document.getElementById('right');
+var story = document.getElementById("story")
+var image = document.getElementById("mainImage")
+
+leftButton.onclick = Disguise;
+rightButton.onlick = Eat;
+document.getElementById("submit").style.display='none';
+
+
+function Disguise(){
+	story.innerHTML='You are confident that you\
+	would not have been assigned this mission if the scientists who sent you\
+	here to Candyland didn\'t trust your judgment, even though it sometime \
+	contradicts with theirs. They have sent you to an unfamiliar place completely\
+	alone, so you have the right to do what you think is best once you get there.\
+	<br/><br/> In your professional opinion, you will seem as unfamiliar to the residents \
+	of Candyland as their world seems to you, and chances are good they \
+	will not trust you. You disguise yourself as the person from your world \
+	you think would fit in best in Candyland: Buddy the Elf.<br/><br/> It\
+	\'s a good thing you\'re always prepared. <br/><br/> You walk through the open \
+	field towards the Gumdrop Mountains, making sure to remain as visible as\
+	possible. You are hoping to find whoever sent the distress call, and \
+	perhaps looking like this they will find you. You\'re hoping anyone\
+	will find you. This place you have arrived in seems too quiet and pristine.\
+	You find it hard to believe anyone lives here at all, even candy people.<br/><br/> \
+	You look at the device that will bring you home and remind yourself that you\
+	are favoring your own judgment over your previous orders. You start \
+	        pushing buttons, slowly and carefully, taking time between each \
+	        press to look out for any effects on yourself or your surroundings. \
+	        The first six you press seem to do nothing, at least nothing that you \
+	        can notice. <br/><br/>When you touch your finger to the seventh button, before you \
+	        can even press it, your perception changes. The world as you see it \
+	        darkens and distorts, and you hear a sound somewhere between a high\
+	         pitched cackle and a grumbling thunder. It is the kind of sound \
+	         you never could have imagined beyond conceptually, like the idea\
+	         of seeing a new color. This experience seems even more impossible \
+	         than the Candyland you entered. You blink and it disappears. \
+	         Candyland is as serene as when you arrived. You wonder if really \
+	         pushing the button will permanently alter your perception and if \
+	         it\'s some kind of trick to throw you off. ';
+	
+	document.getElementById("buttons").style.display='none';
+	document.getElementById("submit").style.display='block';
+	image.src = "DarkCandy.jpg"	
+}
+
+function Eat(){
+	story.innerHTML='THE ENTIRE WORLD IS MADE OF CANDY! You were aware \
+	that this would be the case, but you are amazed by the reality of it. \
+	You begin to eat. <br/><br/>Everything tastes sweeter than you expect \
+	it to; somehow it is all infinitely better than its counterparts in your \
+	universe. In the back of your mind, you wonder if you\'ll ever be satisfied \
+	with candy again once you go home. Then you wonder why you would ever \
+	leave this place. <br/><br/>You eat and you eat and you eat. You never \
+	want to stop eating. Can you stop eating? You\'re not sure, but why would \
+	you stop eating?<br/><br/>All you can think of is eating. You lose all \
+	concept of purpose, of time, and of yourself. Sugar grass, chocolate dirt, \
+	jelly bean bugs. <br/><br/>You\'re devouring a licorice vine when you \
+	hear a sound in the distance. A tune, more like. You can place it immediately, \
+	it\'s an ice cream truck! The licorice drops from your hand and you regain \
+	yourself, remembering your mission. Whatever trance the candy had placed \
+	on you was broken the second you were within earshot of the song. \
+	<br/><br/>Since you are here to investigate, and you personally would \
+	like to know what just done to you and how the sound undid it, you begin \
+	to follow the tune to its source. It is coming from the Lollipop Woods, \
+	which you enter carefully. You keep walking until you see a clearing just \
+	ahead, near the heart of the woods. In the middle, there is a girl \
+	with pink curly hair. The song is coming from her, only she \
+	doesn\'t seem to be singing. From this distance, she looks as if she is \
+	crying, and as if the tune is her sobs. ';
+	
+	document.getElementById("buttons").style.display='none';
+	document.getElementById("submit").style.display='block';
+	image.src = "candy-crush2.jpg"
+}
+
+
+</script>
+
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+  <!-- <script data-cfasync="false" type="text/javascript"
+  src="/form-submission-handler.js"></script> -->
+<!-- END -->
+
+
+ <script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+
+  </body>
+  
+</html>
+

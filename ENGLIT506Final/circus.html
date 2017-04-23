@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Adventure Online</title>
+  <link rel="stylesheet" href="stylecircus.css" type="text/css">
+ 
+  </head>
+  
+  <body>
+	    
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+<div id="top"<p><font color="#00e500">This story is incomplete.<br><br/> 2 or more branches are accepting responses.</font></p></div>
+
+	 <div id = "footer">
+		  <p id="foot">	Spread the word! </p>
+		  <a href="https://twitter.com/share" class="twitter-share-button" 
+		  target="_blank" data-url="http://www.programmedadventure.com" 
+		  data-show-count="false">Tweet</a><script async 
+		  src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a class="tumblr-share-button" data-color="blue" data-notes="none" href="https://embed.tumblr.com/share"></a> <script>!function(d,s,id){var js,ajs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://assets.tumblr.com/share-button.js";ajs.parentNode.insertBefore(js,ajs);}}(document, "script", "tumblr-js");</script>
+	</div>	
+	 
+<div id = "sidebar"> 
+  <h4><a href="index.html">Home</a></h4>
+  <ul style="list-style-type:none">
+  <li><a href="knight.html">Knight Life</a></li>
+  <li><a href="candy.html">Candyland Caper</a></li>
+  <li><a href="circus.html">Century Circus</a></li>
+  <li><a href="island.html">Stranded!</a></li>
+  </ul>
+</div>
+
+<div id="all">
+  <h1> Century Circus </h1>
+  
+<div id = "mainBox">
+    <img id="mainImage" src = "b06bc__68579183_lioncircus_breed_light.jpg">
+    <p id="story">You have been hearing murmurs that the circus was coming to town
+    for weeks now. The strange thing was, if you asked someone when it 
+    would actually arrive, they didn't know. No one did. They didn't even
+    know which circus it was. All of this seemed a little odd to you, but 
+    you often found yourself with very clueless friends, so you didn't 
+    worry about it too much.<br/><br/>One day, you are out walking your dog around dusk
+    and you are stopped by a very abnormal looking man. He is wearing a flashy
+    suit in a pale red color, with tall collars and long tails, and on his head sits a tall
+    hat of the same color. His face is pointed, shiny, and each feature
+    seems, well, the only word you can think of is precise. His clothes 
+    look faded and old, but not tattered. He seems as if he just walked
+    out of a storage closet that has preserved him in perfect condition 
+    for a length of time you couldn't guess. He looks down at you and grins.<br/><br/>
+   "I'm from the circus," he tells you in a low, melodic voice.<br/><br/>"What circus?"
+    you ask him, though he seems to have expected a different response.<br/><br/>"Why, 
+    that one," he laughs, pointing. You turn to see a circus at the end of
+    town, nearly entirely set up. The sign reads <i><b>Century Circus.</b></i> "Why don't you come, 
+    and see it for yourself?"</p>
+  </div>
+  <div id = "buttons"> 
+  <button id = "left"  onclick= Follow()><font color="#00e500"> Follow him to the circus </font></button>
+      <button id = "right" onclick= Leave()><font color="#00e500">  Go home </button></font>
+  </div><!---->
+<div id= "submit">  
+    <h3>What would you do?</h3>
+
+   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <!-- Style The Contact Form How Ever You Prefer -->
+   <link rel="stylesheet" href="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/style.css">
+
+  <form id="gform" method="POST" class="pure-form pure-form-stacked"
+  action="https://script.google.com/macros/s/AKfycbzwL68CSn6hEjBNKiQhenT4_wzjtl5N-lYtw1AEC7oR_Y0jk9bA/exec">
+    <!-- change the form action to your script url -->
+
+   
+
+    <fieldset class="pure-group">
+      <label for="message"></label>
+      <textarea id="message" name="message" rows="6" cols="50"
+      placeholder="Make a suggestion. . ."></textarea>
+    </fieldset>
+
+   <fieldset class="pure-group">
+      <label for="email">email:</label>
+      <input id="email" name="email" type="email" value=""
+      required placeholder="your.name@email.com"/>
+      <span id="email-invalid" style="visibility:hidden">
+        Must be a valid email address</span>
+    </fieldset>
+
+    
+
+    <button class="button-success">
+      Send</button>
+
+  </form>
+
+  <!-- Customise the Thankyou Message People See when they submit the form: -->
+  <div style="display:none;" id="thankyou_message">
+    <h2>Thanks for your suggestion! Check for updates soon!</h2>
+ </div>
+ </div></div>
+
+
+<script type = "text/javascript">
+
+var leftButton = document.getElementById('left');
+
+var rightButton = document.getElementById('right');
+var story = document.getElementById("story")
+var image = document.getElementById("mainImage")
+
+leftButton.onclick = Follow;
+rightButton.onlick = Leave;
+document.getElementById('submit').style.display='none';
+document.getElementById("submit").style.display='none';
+
+
+function Follow(){
+	story.innerHTML='Your curiosity is too strong to resist, so you follow \
+	the man to the circus. You\'re probably more concerned about your dog\'s \
+	wellbeing than your own. The walk to the end of town seems strange, but \
+	you cannot place why. It feels that when you return to these familiar \
+	places after whatever you are about to do, neither they nor you will \
+	be as they are in this moment. <br/><br/>From a distance, the circus \
+	looks dull and sleepy, like it could no longer hold the life and fun \
+	essential to a circus. Maybe it never could. It is situated just beyond \
+	border where town ends, and when you pass the line, then you really see it.\
+	<br/><br/>The difference isn\'t in the circus\' appearance, but rather in the \
+	impression its appearance gives you. You can smell caramel and salt and hear \
+	the murmur of performers within. It sounds like someone is playing piano, \
+	jumping between silly tunes, none of which you recognize, but all of which \
+	sound familiar. You can imagine the people inside now, chatting, grooming \
+	the animals, laughing, singing, napping even. They\'re testing each other \
+	skills, doubting the fortune teller and giggling about loosening the \
+	tight rope wire. <br/><br/>You sense all of this, and you are still \
+	standing outside the entrance of the circus. The man who brought you \
+	there continues inside with long strides. Before you can follow him, you\'re \
+	stopped by the ticket-keeper. It then occurs to you that you do not have \
+	any money on you. You had only gone out to walk your dog. The ticket-keeper, \
+	however, does not want you money. He smiles at your dog and tells you all you \
+	have to do to enter the circus is to cross your heart, like you used to do \
+	when you were a child making a promise. <br/><br/>You realize why the \
+	walk to the circus was so strange. The man who brought you there walked silently.' ;
+	
+	document.getElementById("buttons").style.display='none';
+	document.getElementById("submit").style.display='block';
+	image.src = "ticketbooth.jpg"
+}
+
+function Leave(){
+	story.innerHTML='You wouldn\'t trust this stranger as far as you could \
+	throw him, and he is much taller than you, so that would not be very far \
+	at all. <br/><br/>You decline his offer and leave the park, holding your \
+	dog\'s leash tightly. You notice your dog is pulling, trying to go back \
+	to the man, but you do not look back until you are around a corner. You walk \
+	home, taking a different route than normal in case you were followed. You make \
+	it back and continue your day as you normally would. <br/><br/>In the following \
+	days, you see people you do not recognize around town, presumably from the circus. \
+	They are always alone, and if you see them somewhere, you may see that person again, \
+	but never anywhere else besides that one location. You are hesitant to go back to \
+	the park, but when you do, you see the man you spoke to there. You are careful to \
+	avoid him. He does seem to be watching you, though. <br/><br/>You are surprised \
+	that the town does not exhibit much enthusiasm for the circus. Your friends \
+	have suggested to go a couple of times, but none of them ever really want to, \
+	so you don\'t. Everyone knows that the circus is there, but oddly enough, \
+	no one cares. <br/><br/>You notice that you are not seeing the older residents \
+	of your town as much. Some of them are very old, you tell yourself, so they are \
+	probably just too tired to go out much. <br/><br/>No one seems to know \
+	when the circus will leave, but its departure feels inevitable.' ;
+	
+	document.getElementById("buttons").style.display='none';
+	document.getElementById("submit").style.display='block';
+	image.src = "410lClyL5TL.jpg"
+}
+
+
+</script>
+
+
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+  <!-- <script data-cfasync="false" type="text/javascript"
+  src="/form-submission-handler.js"></script> -->
+<!-- END -->
+
+
+  
+
+
+
+
+
+  </body>
+  
+</html>
+
+

@@ -1,0 +1,164 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P); 
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+body{
+  text-align: center;
+  font-family: 'Press Start 2P';
+  background-color:black;
+
+}
+#top{
+  margin-left: 50%;
+  font-size:.75em;
+  padding: 5px;
+  text-align:right;
+}
+h1{
+  color:#00e500;
+}
+
+#all{
+  text-align: center;
+  margin-left: 250px;
+}
+#mainBox{
+  width: 75%;
+  border-style:ridge; 
+  border-width: 8px;
+  text-align: center;
+  margin: auto;
+ 
+  background-color:#ffff7f;
+  
+}
+
+img{
+  width: 75%;
+  height: auto;
+  margin-top:25px;
+  border-radius:45%;
+}
+
+p{
+  margin-right: 80px;
+  margin-left: 80px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.25em;
+}
+
+.button-success{
+margin-right: 40%;
+  margin-left: 40%;
+  height: 30px;
+  width: 100px;
+  margin-top: 10px;
+  background-color:black;
+  color:#00e500;
+  font-family: 'Press Start 2P';
+}
+
+button{
+  width: 250px;
+  height:50px;
+ margin-right: 10px;
+  margin-left: 10px;
+  font-family: 'Press Start 2P';
+}
+
+#buttons{
+  
+  height: 50px;
+  text-align: center;
+  padding: 20px;
+}
+
+.left{
+  background-color: black;
+ 
+  
+}
+
+.right{
+  background-color: black;
+  
+}
+
+fieldset{
+	width: 600px;
+}
+
+
+#submit{
+  margin-top: 40px;
+  text-align: center;
+  color:#00e500;
+  margin-bottom: 100px;
+  margin-left:25%;
+  margin-right: 30%
+}
+
+.text{
+  height: 300px;
+  width: 600px;
+  float: center;
+  clear: both;
+}
+
+#sidebar {
+    position:fixed;
+    top:0; bottom:0; left:0;
+    width:250px;
+    background: white;
+    text-align: left;
+    font-size: 1.25em;
+  background-image: url("http://68.media.tumblr.com/0979fe7aa2e777ac9e772260f52d8fb9/tumblr_oodtw0ZkH41rpicino1_1280.jpg");
+    background-size:cover;             
+    background-repeat:no-repeat;
+
+}
+#footer{
+	position: fixed;
+	bottom:0;
+	left:250px;
+	right:0;
+	height: 25px;
+	font-size: .4em;
+	background-color: white;
+	text-align: left;
+	padding: 5px;
+	float:left;
+}
+
+#footer p{
+	color: black;
+	font-family: 'Press Start 2P';
+	float:left;
+}
+.twitter-share-button{
+	float:left;
+	margin-left:10px;
+}
+.tumblr-share-button{
+	float:left;
+	margin-left: 10px;
+}
+
+a{
+  color:#e5e500;
+ 
+}
+
+
+ul{
+  margin-top: 100px;
+}
+
+li{
+  margin-bottom: 30px;
+  font-size: .5em;
+}
+
+h4{
+  margin-left: 20%;
+}
+
